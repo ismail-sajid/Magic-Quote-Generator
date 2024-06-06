@@ -63,4 +63,4 @@ quote-app/
 
 ### Home Page
 
-![Home Page](Pictures/HomePage.png)
+![Home Page](HomePage.png)

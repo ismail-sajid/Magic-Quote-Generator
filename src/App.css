@@ -6,6 +6,7 @@
   text-align: center;
   background-color: #F9F5F6;
   font-family: 'Open Sans', sans-serif;
+
 }
 
 
@@ -24,7 +25,6 @@
   left: 399px;
   gap: 0px;
   border-radius: 29px;
-  opacity: 0px;
   background-color: #F8E8EE;
   padding: 20px;
   margin: 30px;
@@ -35,3 +35,5 @@
   color: #6E0028;
   width: 250px;
 }
+
+
