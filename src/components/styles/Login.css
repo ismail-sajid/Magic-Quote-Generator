@@ -1,0 +1,66 @@
+.Auth {
+  margin: 20px auto;
+  width: 500px;
+  text-align: center;
+  box-shadow: 0 2px 3px #ccc;
+  border: 1px solid #eee;
+  padding: 10px;
+  box-sizing: border-box;
+background-color: #F8E8EE;
+}
+
+.form-heading{
+  color: #6E0028;
+}
+
+.input-value {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.input-lable {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 8px;
+}
+.input-element {
+  outline: black;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font: inherit;
+  padding: 6px 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 20px;
+
+}
+
+.pt {
+  padding-top: 100px;
+}
+
+.submit-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 10px;
+  margin: 10px;
+  font-weight: 700;
+  color: #5c9210;
+}
+.signup-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 10px;
+  margin: 10px;
+  font-weight: 700;
+  color: #944317;
+}

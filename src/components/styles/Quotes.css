@@ -1,0 +1,46 @@
+.quote {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.quote-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy-icon{
+  cursor: pointer;
+  color: #6E0028;
+}
+
+.copy-icon:hover {
+  color: #000;
+}
+.quote-text {
+  font-size: 1.2em;
+  margin: 20px 0;
+  line-height: 1.4;
+  padding: 10px;
+}
+
+.generate-button {
+  width: 247px;
+  height: 62px;
+  top: 337px;
+  left: 597px;
+  border-radius: 16px;
+  cursor: pointer;
+  background-color: #6E0028;
+  font-size: medium;
+  color: rgb(255, 255, 255);
+
+
+}
+
+.generate-button:hover {
+  background-color: #6e4051;
+}
