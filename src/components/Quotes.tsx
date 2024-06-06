@@ -25,7 +25,7 @@ export const Quote: React.FC<QuoteProps> = ({ magicQuote, generateMagicQuote }) 
         setIsCopied(false);
         toast.error('Failed to copy quote.');
       });
-  }, []);
+  }, [magicQuote]);
   return (
     <>
       <div className="quote-container">
