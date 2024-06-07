@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import { Quote } from './components/Quotes';
 import { UserQuotes } from './components/UserQuotes';
 import './App.css';
 import { Navbar } from 'components/Navbar';
 import { Link, Navigate } from 'react-router-dom';
 import { useUser } from 'UserContext';
+import { fetchQuotes } from './services/quoteService';
 
 interface QuoteType {
   text: string;
@@ -18,10 +18,9 @@ export const QuoteApp: React.FC = ({}) => {
   const { user } = useUser();
 
   useEffect(() => {
-    const fetchQuotes = async () => {
+    const getQuotes = async () => {
       try {
-        const response = await axios.get<QuoteType[]>('https://type.fit/api/quotes');
-        const data = response.data;
+        const data = await fetchQuotes();
         setQuotes(data);
         setMagicQuote(data[Math.floor(Math.random() * data.length)].text);
       } catch (error) {
@@ -29,7 +28,7 @@ export const QuoteApp: React.FC = ({}) => {
       }
     };
 
-    fetchQuotes();
+    getQuotes();
   }, []);
 
   const generateMagicQuote = () => {
