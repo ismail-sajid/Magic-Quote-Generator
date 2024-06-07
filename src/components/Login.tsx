@@ -63,39 +63,40 @@ export const Login: React.FC = ({}) => {
   return (
     <>
       <Navbar />
+      <div className="login-container">
+        <div className="pt">
+          <div className="Auth">
+            <h2 className="form-heading">{isSignUp ? 'Sign Up' : 'Sign In'}</h2>
+            <form onSubmit={handleAuth}>
+              <div className="input-value ">
+                <label className="input-lable"></label>
+                <input
+                  type="text"
+                  placeholder="Username"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  className="input-element"
+                />
+              </div>
+              <div className="input-value ">
+                <label className="input-lable"></label>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className="input-element"
+                />
+              </div>
 
-      <div className="pt">
-        <div className="Auth">
-          <h2 className="form-heading">{isSignUp ? 'Sign Up' : 'Sign In'}</h2>
-          <form onSubmit={handleAuth}>
-            <div className="input-value ">
-              <label className="input-lable"></label>
-              <input
-                type="text"
-                placeholder="Username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                className="input-element"
-              />
-            </div>
-            <div className="input-value ">
-              <label className="input-lable"></label>
-              <input
-                type="password"
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                className="input-element"
-              />
-            </div>
-
-            <button type="submit" className="submit-button">
-              {isSignUp ? 'Sign Up' : 'Sign In'}
+              <button type="submit" className="submit-button">
+                {isSignUp ? 'Sign Up' : 'Sign In'}
+              </button>
+            </form>
+            <button onClick={() => setIsSignUp((prev) => !prev)} className="signup-button">
+              {isSignUp ? 'Already have an account? Sign In' : 'No account? Sign Up'}
             </button>
-          </form>
-          <button onClick={() => setIsSignUp((prev) => !prev)} className="signup-button">
-            {isSignUp ? 'Already have an account? Sign In' : 'No account? Sign Up'}
-          </button>
+          </div>
         </div>
       </div>
     </>

@@ -1,0 +1,13 @@
+.error-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F9F5F6;
+
+}
+.error-heading{
+  color: #6E0028;
+  padding: 20px;
+}
+
